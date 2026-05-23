@@ -12,17 +12,17 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden" style={{ background: "#0E1726" }}>
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden" style={{ background: "#162032" }}>
       {/* Background image */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ opacity: 0.15, filter: "brightness(0.92)" }}
+        style={{ opacity: 0.28, filter: "brightness(0.92)" }}
       />
       {/* Overlay */}
-      <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #0E1726 0%, rgba(14,23,38,0.95) 50%, rgba(14,23,38,0.6) 100%)" }} />
+      <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #162032 0%, rgba(22,32,50,0.92) 50%, rgba(22,32,50,0.5) 100%)" }} />
       <div className="absolute left-0 top-0 bottom-0 w-1" style={{ background: "linear-gradient(180deg, #0B63CE, #25B7FF)" }} />
 
       <div className="container-wide relative z-10 py-24">
