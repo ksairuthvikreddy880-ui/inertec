@@ -28,11 +28,11 @@ export default function PageLayout({
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24" style={{ minHeight: "380px" }}>
           {breadcrumb.length > 0 && (
-            <nav className="flex items-center gap-2 text-white/50 text-xs mb-4">
+            <nav className="flex items-center gap-2 text-slate-300 text-xs mb-4">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               {breadcrumb.map((b) => (
                 <span key={b.href} className="flex items-center gap-2">
-                  <span>/</span>
+                  <span className="text-slate-500">/</span>
                   <Link href={b.href} className="hover:text-white transition-colors">{b.label}</Link>
                 </span>
               ))}
@@ -109,9 +109,9 @@ export default function PageLayout({
                   ))}
                 </div>
               )}
-              <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-xl p-6 text-white">
-                <h4 className="font-semibold mb-2">Request a Quote</h4>
-                <p className="text-white/70 text-sm mb-4">Get a customized solution for your requirements.</p>
+              <div className="bg-gradient-to-br from-[var(--color-primary)] to-[#0E1726] rounded-xl p-6 text-white">
+                <h4 className="font-semibold mb-2 text-white">Request a Quote</h4>
+                <p className="text-slate-300 text-sm mb-4">Get a customized solution for your requirements.</p>
                 <Link href="/contact" className="inline-block bg-white text-[var(--color-primary)] text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[var(--color-primary-light)] transition-colors">
                   Contact Us →
                 </Link>

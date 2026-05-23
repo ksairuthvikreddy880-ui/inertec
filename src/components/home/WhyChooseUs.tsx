@@ -19,12 +19,12 @@ export default function WhyChooseUs() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="section-padding bg-[var(--color-secondary)] text-white relative overflow-hidden">
+    <section className="section-padding bg-[#0E1726] relative overflow-hidden">
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
       <div className="container-wide relative z-10">
         <div className="text-center mb-14">
           <div className="section-rule mx-auto" />
-          <p className="label-tag text-[var(--color-accent)] mb-3">Why Inertec</p>
+          <p className="text-[var(--color-accent)] text-xs font-bold tracking-widest uppercase mb-3">Why Inertec</p>
           <h2 className="text-display-lg text-white">The Engineering Difference</h2>
         </div>
 
@@ -37,12 +37,13 @@ export default function WhyChooseUs() {
         >
           {whyChooseUs.map((item) => (
             <motion.div key={item.icon} variants={fadeUp}
-              className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-[var(--color-accent)]/40 transition-all duration-200">
-              <div className="w-10 h-10 rounded-lg bg-[var(--color-primary)]/20 flex items-center justify-center text-[var(--color-accent)] mb-4">
+              className="group bg-white/8 border border-white/15 rounded-xl p-6 hover:bg-white/12 hover:border-[var(--color-accent)]/50 transition-all duration-200">
+              <div className="w-10 h-10 rounded-lg bg-[var(--color-primary)]/30 flex items-center justify-center text-[var(--color-accent)] mb-4">
                 {icons[item.icon]}
               </div>
               <h3 className="text-white font-semibold text-base mb-2">{item.title}</h3>
-              <p className="text-white/50 text-sm leading-relaxed">{item.description}</p>
+              {/* Use slate-300 instead of white/50 for readable contrast on dark bg */}
+              <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

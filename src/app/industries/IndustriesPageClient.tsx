@@ -20,13 +20,13 @@ export default function IndustriesPageClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
-          <nav className="flex items-center gap-2 text-white/50 text-xs mb-4">
+          <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Applications</span>
           </nav>
           <h1 className="text-white text-5xl font-bold font-display mb-4">Industries We Serve</h1>
-          <p className="text-white/60 text-lg max-w-xl">Critical industries where contamination is not an option.</p>
+          <p className="text-slate-300 text-lg max-w-xl">Critical industries where contamination is not an option.</p>
         </div>
       </div>
 
@@ -81,7 +81,7 @@ export default function IndustriesPageClient() {
                   </div>
                   <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-xl p-6 text-white">
                     <h4 className="font-semibold mb-2">Discuss Your Application</h4>
-                    <p className="text-white/70 text-sm mb-4">Our engineers will help you find the right solution.</p>
+                    <p className="text-slate-200 text-sm mb-4">Our engineers will help you find the right solution.</p>
                     <Link href="/contact" className="inline-block bg-white text-[var(--color-primary)] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[var(--color-primary-light)] transition-colors">
                       Contact Us →
                     </Link>

@@ -104,7 +104,7 @@ export default function Navbar() {
   return (
     <>
       {/* Top utility bar */}
-      <div className="bg-[var(--color-topbar)] text-white/80 text-xs py-2 hidden md:block">
+      <div className="bg-[var(--color-topbar)] text-slate-100 text-xs py-2 hidden md:block">
         <div className="container-wide flex items-center justify-between">
           <div className="flex items-center gap-6">
             <a href="tel:+91XXXXXXXXXX" className="flex items-center gap-1.5 hover:text-white transition-colors">

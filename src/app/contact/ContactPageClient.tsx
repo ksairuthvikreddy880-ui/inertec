@@ -27,13 +27,13 @@ export default function ContactPageClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "380px" }}>
-          <nav className="flex items-center gap-2 text-white/50 text-xs mb-4">
+          <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Contact</span>
           </nav>
           <h1 className="text-white text-5xl font-bold font-display mb-4">Contact Us</h1>
-          <p className="text-white/60 text-lg max-w-xl">Our engineering team responds within one business day.</p>
+          <p className="text-slate-300 text-lg max-w-xl">Our engineering team responds within one business day.</p>
         </div>
       </div>
 
@@ -115,8 +115,8 @@ export default function ContactPageClient() {
 
               <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-2xl p-6 text-white">
                 <h4 className="font-semibold text-lg mb-2">Typical Response Time</h4>
-                <p className="text-white/70 text-sm mb-4">We respond to all inquiries within <strong className="text-white">1 business day</strong>.</p>
-                <div className="flex items-center gap-2 text-sm text-white/70">
+                <p className="text-slate-200 text-sm mb-4">We respond to all inquiries within <strong className="text-white">1 business day</strong>.</p>
+                <div className="flex items-center gap-2 text-sm text-slate-200">
                   <div className="w-2 h-2 bg-[var(--color-accent)] rounded-full animate-pulse" />
                   Engineering team available Mon–Sat
                 </div>

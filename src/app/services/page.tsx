@@ -32,13 +32,13 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
-          <nav className="flex items-center gap-2 text-white/50 text-xs mb-4">
+          <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Services</span>
           </nav>
           <h1 className="text-white text-5xl font-bold font-display mb-4">Engineering Support</h1>
-          <p className="text-white/60 text-lg max-w-xl">From installation to lifetime support — we&apos;re with you at every stage.</p>
+          <p className="text-slate-300 text-lg max-w-xl">From installation to lifetime support — we&apos;re with you at every stage.</p>
         </div>
       </div>
 
@@ -89,7 +89,7 @@ export default function ServicesPage() {
             <div>
               <div className="section-rule" />
               <h2 className="text-display-lg text-white mb-4">Need Support?</h2>
-              <p className="text-white/60 leading-relaxed mb-8">
+              <p className="text-slate-300 leading-relaxed mb-8">
                 Whether you need technical assistance, spare parts, or want to schedule a maintenance visit — our team is ready to help.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -106,7 +106,7 @@ export default function ServicesPage() {
               ].map((stat) => (
                 <div key={stat.label} className="bg-white/10 border border-white/20 rounded-xl p-5">
                   <div className="text-2xl font-bold font-display text-white mb-1">{stat.value}</div>
-                  <div className="text-white/50 text-xs uppercase tracking-wide">{stat.label}</div>
+                  <div className="text-slate-400 text-xs uppercase tracking-wide">{stat.label}</div>
                 </div>
               ))}
             </div>

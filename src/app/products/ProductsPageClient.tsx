@@ -28,13 +28,13 @@ export default function ProductsPageClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
-          <nav className="flex items-center gap-2 text-white/50 text-xs mb-4">
+          <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Products</span>
           </nav>
           <h1 className="text-white text-5xl font-bold font-display mb-4">Engineered Systems</h1>
-          <p className="text-white/60 text-lg max-w-xl">Advanced process solutions for modern manufacturing and research.</p>
+          <p className="text-slate-300 text-lg max-w-xl">Advanced process solutions for modern manufacturing and research.</p>
         </div>
       </div>
 
@@ -97,9 +97,9 @@ export default function ProductsPageClient() {
               <div className="card h-full flex flex-col bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white overflow-hidden" style={{ minHeight: "300px" }}>
                 <div className="p-6 flex flex-col flex-1 justify-between">
                   <div>
-                    <p className="text-white/50 text-xs uppercase tracking-widest mb-4">Dedicated Section</p>
+                    <p className="text-slate-400 text-xs uppercase tracking-widest mb-4">Dedicated Section</p>
                     <h3 className="font-semibold text-xl mb-3">Battery Fabrication Equipment</h3>
-                    <p className="text-white/60 text-sm leading-relaxed">Coin cell, pouch cell, and cylindrical cell assembly systems for inert atmosphere operation.</p>
+                    <p className="text-slate-300 text-sm leading-relaxed">Coin cell, pouch cell, and cylindrical cell assembly systems for inert atmosphere operation.</p>
                   </div>
                   <Link href="/battery-fabrication" className="btn-outline-white mt-6 self-start text-sm">View Battery Equipment</Link>
                 </div>

@@ -82,13 +82,13 @@ export default function BatteryPageClient() {
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
-          <nav className="flex items-center gap-2 text-white/50 text-xs mb-4">
+          <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span>/</span>
             <span className="text-white">Battery Fabrication</span>
           </nav>
           <h1 className="text-white text-5xl font-bold font-display mb-4">Battery Fabrication Equipment</h1>
-          <p className="text-white/60 text-lg max-w-xl mb-8">Complete cell assembly systems for inert atmosphere operation.</p>
+          <p className="text-slate-300 text-lg max-w-xl mb-8">Complete cell assembly systems for inert atmosphere operation.</p>
           <div className="flex flex-wrap gap-3">
             {batteryCategories.map((cat) => (
               <a key={cat.id} href={`#${cat.id}`}
@@ -108,7 +108,7 @@ export default function BatteryPageClient() {
       <section className="section-padding bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
         <div className="container-wide text-center">
           <h2 className="text-display-md text-white mb-4">Ready to Build Your Battery Lab?</h2>
-          <p className="text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">
+          <p className="text-slate-300 max-w-lg mx-auto mb-8 leading-relaxed">
             Our engineers will help you select and configure the right equipment for your specific cell format and production requirements.
           </p>
           <Link href="/contact" className="btn-outline-white">Contact Our Battery Team</Link>
