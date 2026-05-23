@@ -79,8 +79,8 @@ export default function BatteryPageClient() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="https://images.unsplash.com/photo-1620714223084-8fcacc2dbe4d?w=1600&q=80"
           alt="Battery Fabrication" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0E1726]/90 via-[#0E1726]/70 to-transparent" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0B63CE] to-[#25B7FF]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
           <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
@@ -105,7 +105,7 @@ export default function BatteryPageClient() {
       ))}
 
       {/* CTA */}
-      <section className="section-padding bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
+      <section className="section-padding bg-[#0B63CE] text-white">
         <div className="container-wide text-center">
           <h2 style={{ color: "#ffffff" }} className="text-display-md mb-4">Ready to Build Your Battery Lab?</h2>
           <p className="text-slate-300 max-w-lg mx-auto mb-8 leading-relaxed">

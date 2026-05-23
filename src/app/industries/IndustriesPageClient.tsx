@@ -17,8 +17,8 @@ export default function IndustriesPageClient() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1600&q=80"
           alt="Applications" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0E1726]/90 via-[#0E1726]/70 to-transparent" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0B63CE] to-[#25B7FF]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
           <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
@@ -79,7 +79,7 @@ export default function IndustriesPageClient() {
                       ))}
                     </div>
                   </div>
-                  <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-xl p-6 text-white">
+                  <div className="bg-[#0B63CE] rounded-xl p-6 text-white">
                     <h4 className="font-semibold mb-2">Discuss Your Application</h4>
                     <p className="text-slate-200 text-sm mb-4">Our engineers will help you find the right solution.</p>
                     <Link href="/contact" className="inline-block bg-white text-[var(--color-primary)] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[var(--color-primary-light)] transition-colors">

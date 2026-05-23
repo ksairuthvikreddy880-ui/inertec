@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -7,23 +7,23 @@ const stats = [
   { value: "15+", label: "Years Engineering" },
   { value: "500+", label: "Systems Installed" },
   { value: "40+", label: "Countries Served" },
-  { value: "<1 ppm", label: "O₂ & H₂O Precision" },
+  { value: "<1 ppm", label: "O2 & H2O Precision" },
 ];
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-[var(--color-secondary)]">
-      {/* Background image — reduced opacity so overlay text stays readable */}
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden" style={{ background: "#0E1726" }}>
+      {/* Background image */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-15"
-        style={{ filter: "brightness(0.92)" }}
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0.15, filter: "brightness(0.92)" }}
       />
-      {/* Strong gradient overlay — ensures text is always readable */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0E1726] via-[#0E1726]/95 to-[#0E1726]/60" />
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
+      {/* Overlay */}
+      <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #0E1726 0%, rgba(14,23,38,0.95) 50%, rgba(14,23,38,0.6) 100%)" }} />
+      <div className="absolute left-0 top-0 bottom-0 w-1" style={{ background: "linear-gradient(180deg, #0B63CE, #25B7FF)" }} />
 
       <div className="container-wide relative z-10 py-24">
         <div className="max-w-3xl">
@@ -33,7 +33,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-3 mb-6"
           >
-            <div className="w-8 h-0.5 bg-[var(--color-accent)]" />
+            <div className="w-8 h-0.5" style={{ background: "#25B7FF" }} />
             <span style={{ color: "#25B7FF" }} className="text-xs font-bold tracking-widest uppercase">
               Precision Inert Atmosphere Engineering
             </span>
@@ -54,7 +54,8 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-slate-300 text-lg leading-relaxed max-w-xl mb-10"
+            style={{ color: "#cbd5e1" }}
+            className="text-lg leading-relaxed max-w-xl mb-10"
           >
             Inertec Systems designs and manufactures precision glovebox systems, inert purge boxes,
             and battery fabrication equipment for the world&apos;s most demanding industries.
@@ -80,12 +81,13 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-white/20"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.15)" }}
           >
             {stats.map((stat) => (
               <div key={stat.label}>
-                <div className="text-2xl font-bold text-white font-display">{stat.value}</div>
-                <div className="text-slate-400 text-xs mt-1 uppercase tracking-wide">{stat.label}</div>
+                <div style={{ color: "#ffffff" }} className="text-2xl font-bold font-display">{stat.value}</div>
+                <div style={{ color: "#94a3b8" }} className="text-xs mt-1 uppercase tracking-wide">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -99,11 +101,12 @@ export default function HeroSection() {
         transition={{ delay: 1 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-slate-400 text-xs tracking-widest uppercase">Scroll</span>
+        <span style={{ color: "#94a3b8" }} className="text-xs tracking-widest uppercase">Scroll</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
-          className="w-0.5 h-8 bg-gradient-to-b from-slate-400 to-transparent"
+          className="w-0.5 h-8"
+          style={{ background: "linear-gradient(180deg, #94a3b8, transparent)" }}
         />
       </motion.div>
     </section>

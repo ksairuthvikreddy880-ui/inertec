@@ -29,8 +29,8 @@ export default function ServicesPage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80"
           alt="Services" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0E1726]/90 via-[#0E1726]/70 to-transparent" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0B63CE] to-[#25B7FF]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
           <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
@@ -83,18 +83,18 @@ export default function ServicesPage() {
       </section>
 
       {/* Support form CTA */}
-      <section className="section-padding bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
+      <section className="section-padding" style={{ background: "linear-gradient(135deg, #0B63CE 0%, #0E1726 100%)" }}>
         <div className="container-wide">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="section-rule" />
-              <h2 style={{ color: "#ffffff" }} className="text-display-lg mb-4">Need Support?</h2>
-              <p className="text-slate-300 leading-relaxed mb-8">
+              <div className="w-10 h-0.5 mb-4" style={{ background: "#25B7FF" }} />
+              <h2 className="text-display-lg mb-4" style={{ color: "#ffffff" }}>Need Support?</h2>
+              <p className="leading-relaxed mb-8" style={{ color: "#cbd5e1" }}>
                 Whether you need technical assistance, spare parts, or want to schedule a maintenance visit — our team is ready to help.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="btn-outline-white">Contact Support</Link>
-                <Link href="/products" className="btn-outline-white">Browse Products</Link>
+                <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-all" style={{ border: "1.5px solid rgba(255,255,255,0.6)", color: "#ffffff", background: "transparent" }}>Contact Support</Link>
+                <Link href="/products" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-all" style={{ border: "1.5px solid rgba(255,255,255,0.6)", color: "#ffffff", background: "transparent" }}>Browse Products</Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -104,9 +104,9 @@ export default function ServicesPage() {
                 { label: "Systems Supported", value: "500+" },
                 { label: "Uptime Guarantee", value: "99.8%" },
               ].map((stat) => (
-                <div key={stat.label} className="bg-white/10 border border-white/20 rounded-xl p-5">
-                  <div className="text-2xl font-bold font-display text-white mb-1">{stat.value}</div>
-                  <div className="text-slate-400 text-xs uppercase tracking-wide">{stat.label}</div>
+                <div key={stat.label} className="rounded-xl p-5" style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)" }}>
+                  <div className="text-2xl font-bold font-display mb-1" style={{ color: "#ffffff" }}>{stat.value}</div>
+                  <div className="text-xs uppercase tracking-wide" style={{ color: "#94a3b8" }}>{stat.label}</div>
                 </div>
               ))}
             </div>

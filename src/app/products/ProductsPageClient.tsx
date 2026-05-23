@@ -25,8 +25,8 @@ export default function ProductsPageClient() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80"
           alt="Products" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)]/90 via-[var(--color-secondary)]/70 to-transparent" />
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0E1726]/90 via-[#0E1726]/70 to-transparent" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0B63CE] to-[#25B7FF]" />
         <div className="relative z-10 flex flex-col justify-end h-full px-10 pb-12 pt-24 container-wide" style={{ minHeight: "420px" }}>
           <nav className="flex items-center gap-2 text-slate-400 text-xs mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
@@ -94,7 +94,7 @@ export default function ProductsPageClient() {
 
             {/* Battery fabrication CTA card */}
             <motion.div variants={fadeUp}>
-              <div className="card h-full flex flex-col bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white overflow-hidden" style={{ minHeight: "300px" }}>
+              <div className="card h-full flex flex-col bg-[#0B63CE] text-white overflow-hidden" style={{ minHeight: "300px" }}>
                 <div className="p-6 flex flex-col flex-1 justify-between">
                   <div>
                     <p className="text-slate-400 text-xs uppercase tracking-widest mb-4">Dedicated Section</p>

@@ -229,7 +229,7 @@ export default function Navbar() {
                     <div className="relative rounded-xl overflow-hidden h-40 group cursor-pointer">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={megaMenus[openMenu].featured.img} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-secondary)]/80 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0E1726]/80 to-transparent" />
                       <Link href={megaMenus[openMenu].featured.href} onClick={() => setOpenMenu(null)}
                         className="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold flex items-center justify-between">
                         {megaMenus[openMenu].featured.label}

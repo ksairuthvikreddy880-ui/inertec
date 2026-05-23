@@ -33,7 +33,8 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image src="/logo.jpeg" alt="Inertec Systems" width={660} height={228}
-                className="h-10 w-auto object-contain brightness-0 invert" />
+                className="h-10 w-auto object-contain"
+                style={{ mixBlendMode: "screen", filter: "brightness(2) saturate(0) invert(1)" }} />
             </Link>
             {/* slate-400 — readable on dark bg */}
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-6">

@@ -10,7 +10,7 @@ export default function ContactCTA() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="section-padding bg-gradient-to-br from-[var(--color-primary)] to-[#0E1726] relative overflow-hidden">
+    <section className="section-padding bg-[#0B63CE] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} />
       <div className="container-wide relative z-10">
         <motion.div ref={ref} variants={staggerContainer} initial="hidden" animate={isInView ? "visible" : "hidden"}
