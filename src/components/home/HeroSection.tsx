@@ -1,118 +1,105 @@
 ﻿"use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { motion } from "framer-motion";
 
-const H = "560px";
-const TILE_H = "186px";
-
-const productTiles = [
-  { label: "Glovebox Workstations", href: "/products#glovebox-systems" },
-  { label: "Gas Purifiers", href: "/products#gas-purification" },
-  { label: "Solvent Purification", href: "/products#purge-boxes" },
-  { label: "Engineering & Robotics", href: "/products#custom-enclosures" },
-  { label: "Battery Fabrication", href: "/battery-fabrication" },
-  { label: "Customized Enclosures", href: "/products#custom-enclosures" },
-  { label: "Process Tools", href: "/products" },
-  { label: "Accessories & Spare Parts", href: "/products" },
-  { label: "Storage Cabinets", href: "/products#storage-cabinets" },
+const stats = [
+  { value: "15+", label: "Years Engineering" },
+  { value: "500+", label: "Systems Installed" },
+  { value: "40+", label: "Countries Served" },
+  { value: "<1 ppm", label: "O₂ & H₂O Precision" },
 ];
-
-const applicationTiles = [
-  { label: "Laboratory & Chemistry", href: "/industries#research" },
-  { label: "Batteries", href: "/industries#lithium-battery" },
-  { label: "Personal Protection", href: "/industries" },
-  { label: "Perovskite", href: "/industries#semiconductor" },
-  { label: "OLEDs / Organic Electronics", href: "/industries#semiconductor" },
-  { label: "Additive Manufacturing", href: "/industries" },
-  { label: "Welding", href: "/industries" },
-  { label: "Material Purification", href: "/industries#pharmaceutical" },
-  { label: "Thermal Treatment", href: "/industries" },
-];
-
-type ActivePanel = "none" | "products" | "applications";
-
-const SelectButton = () => (
-  <button className="inline-flex items-center gap-3 border-2 border-white text-white px-8 py-3 text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-[var(--color-ink)] transition-colors">
-    Select
-    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-);
 
 export default function HeroSection() {
-  const [active, setActive] = useState<ActivePanel>("none");
-
-  const toggleProducts = () => setActive((p) => (p === "products" ? "none" : "products"));
-  const toggleApplications = () => setActive((p) => (p === "applications" ? "none" : "applications"));
-
-  const panelBase = { backgroundSize: "cover", backgroundPosition: "center", minHeight: H };
-
   return (
-    <div>
-      {/* Hero banner */}
-      <div className="bg-white py-10 flex flex-col items-center justify-center text-center border-b border-[var(--color-border)]">
-        <Image src="/logo.jpeg" alt="Inertec Systems LLP" width={660} height={228} className="h-28 w-auto object-contain" priority />
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-[var(--color-secondary)]">
+      {/* Background image */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-secondary)] via-[var(--color-secondary)]/90 to-[var(--color-secondary)]/40" />
+      {/* Accent line */}
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[var(--color-primary)] to-[var(--color-accent)]" />
+
+      <div className="container-wide relative z-10 py-24">
+        <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex items-center gap-3 mb-6"
+          >
+            <div className="w-8 h-0.5 bg-[var(--color-accent)]" />
+            <span className="text-[var(--color-accent)] text-xs font-bold tracking-widest uppercase">Precision Inert Atmosphere Engineering</span>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-display-xl text-white mb-6"
+          >
+            Engineered for{" "}
+            <span className="text-gradient">Zero Contamination</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-white/60 text-lg leading-relaxed max-w-xl mb-10"
+          >
+            Inertec Systems designs and manufactures precision glovebox systems, inert purge boxes, and battery fabrication equipment for the world&apos;s most demanding industries.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-wrap gap-4 mb-16"
+          >
+            <Link href="/products" className="btn-primary">
+              Explore Products
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </Link>
+            <Link href="/contact" className="btn-outline-white">Request a Quote</Link>
+          </motion.div>
+
+          {/* Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-white/10"
+          >
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <div className="text-2xl font-bold text-white font-display">{stat.value}</div>
+                <div className="text-white/40 text-xs mt-1 uppercase tracking-wide">{stat.label}</div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
       </div>
 
-      {/* Products / Applications selector */}
-      <div className="flex flex-col md:flex-row" style={{ minHeight: H }}>
-
-        {/* ── LEFT: Products ── */}
-        {active === "products" ? (
-          <div className="relative" style={{ width: "50%", backgroundImage: "url(/products-bg.jpg)", ...panelBase }}>
-            <div className="absolute inset-0 bg-[#1B4F8A]/60" />
-            <div className="relative z-10 grid grid-cols-3 h-full" style={{ minHeight: H }}>
-              {productTiles.map((tile) => (
-                <Link key={tile.label} href={tile.href}
-                  className="flex items-end p-5 border border-white/20 hover:bg-white/10 transition-colors"
-                  style={{ minHeight: TILE_H }}>
-                  <span className="text-white text-sm font-semibold leading-snug">{tile.label}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="relative flex items-center justify-center cursor-pointer select-none"
-            style={{ width: "50%", backgroundImage: "url(/products-bg.jpg)", ...panelBase }}
-            onClick={toggleProducts}>
-            <div className="absolute inset-0 bg-[#1B4F8A]/60" />
-            <div className="relative z-10 text-center px-8">
-              <h2 className="text-4xl font-bold text-white tracking-widest uppercase mb-8">Products</h2>
-              <SelectButton />
-            </div>
-          </div>
-        )}
-
-        {/* ── RIGHT: Applications ── */}
-        {active === "applications" ? (
-          <div className="relative" style={{ width: "50%", backgroundImage: "url(/applications-bg.jpg)", ...panelBase }}>
-            <div className="absolute inset-0 bg-[#7a8a96]/60" />
-            <div className="relative z-10 grid grid-cols-3 h-full" style={{ minHeight: H }}>
-              {applicationTiles.map((tile) => (
-                <Link key={tile.label} href={tile.href}
-                  className="flex items-end p-5 border border-white/20 hover:bg-white/10 transition-colors"
-                  style={{ minHeight: TILE_H }}>
-                  <span className="text-white text-sm font-semibold leading-snug">{tile.label}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="relative flex items-center justify-center cursor-pointer select-none"
-            style={{ width: "50%", backgroundImage: "url(/applications-bg.jpg)", ...panelBase }}
-            onClick={toggleApplications}>
-            <div className="absolute inset-0 bg-[#7a8a96]/60" />
-            <div className="relative z-10 text-center px-8">
-              <h2 className="text-4xl font-bold text-white tracking-widest uppercase mb-8">Applications</h2>
-              <SelectButton />
-            </div>
-          </div>
-        )}
-
-      </div>
-    </div>
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+      >
+        <span className="text-white/30 text-xs tracking-widest uppercase">Scroll</span>
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+          className="w-0.5 h-8 bg-gradient-to-b from-white/30 to-transparent"
+        />
+      </motion.div>
+    </section>
   );
 }

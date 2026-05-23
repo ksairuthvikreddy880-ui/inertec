@@ -53,7 +53,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${syne.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="bg-white text-[var(--color-ink)] antialiased">
+      <body className="bg-white text-[var(--color-text)] antialiased">
         <SmoothScrollProvider>
           <Navbar />
           <main>{children}</main>
