@@ -21,7 +21,7 @@ export default function ContactCTA() {
             <motion.p variants={fadeUp} className="text-slate-300 text-xs font-bold tracking-widest uppercase mb-4">
               Ready to Engineer Your Environment?
             </motion.p>
-            <motion.h2 variants={fadeUp} className="text-display-lg text-white mb-4">
+            <motion.h2 variants={fadeUp} style={{ color: "#ffffff" }} className="text-display-lg mb-4">
               Let&apos;s Build Your Inert Atmosphere Solution
             </motion.h2>
             {/* slate-300 instead of white/60 */}

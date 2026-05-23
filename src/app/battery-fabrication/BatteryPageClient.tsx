@@ -87,7 +87,7 @@ export default function BatteryPageClient() {
             <span>/</span>
             <span className="text-white">Battery Fabrication</span>
           </nav>
-          <h1 className="text-white text-5xl font-bold font-display mb-4">Battery Fabrication Equipment</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-5xl font-bold font-display mb-4">Battery Fabrication Equipment</h1>
           <p className="text-slate-300 text-lg max-w-xl mb-8">Complete cell assembly systems for inert atmosphere operation.</p>
           <div className="flex flex-wrap gap-3">
             {batteryCategories.map((cat) => (
@@ -107,7 +107,7 @@ export default function BatteryPageClient() {
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
         <div className="container-wide text-center">
-          <h2 className="text-display-md text-white mb-4">Ready to Build Your Battery Lab?</h2>
+          <h2 style={{ color: "#ffffff" }} className="text-display-md mb-4">Ready to Build Your Battery Lab?</h2>
           <p className="text-slate-300 max-w-lg mx-auto mb-8 leading-relaxed">
             Our engineers will help you select and configure the right equipment for your specific cell format and production requirements.
           </p>

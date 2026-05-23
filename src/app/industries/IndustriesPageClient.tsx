@@ -25,7 +25,7 @@ export default function IndustriesPageClient() {
             <span>/</span>
             <span className="text-white">Applications</span>
           </nav>
-          <h1 className="text-white text-5xl font-bold font-display mb-4">Industries We Serve</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-5xl font-bold font-display mb-4">Industries We Serve</h1>
           <p className="text-slate-300 text-lg max-w-xl">Critical industries where contamination is not an option.</p>
         </div>
       </div>

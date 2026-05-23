@@ -31,7 +31,7 @@ export default function AboutPageClient() {
             <span>/</span>
             <span className="text-white">About</span>
           </nav>
-          <h1 className="text-white text-5xl font-bold font-display mb-4">About Inertec Systems</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-5xl font-bold font-display mb-4">About Inertec Systems</h1>
           <p className="text-slate-300 text-lg max-w-xl">15+ years of precision inert atmosphere engineering.</p>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function AboutPageClient() {
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] text-white">
         <div className="container-wide text-center">
-          <h2 className="text-display-md text-white mb-4">Ready to Work With Us?</h2>
+          <h2 style={{ color: "#ffffff" }} className="text-display-md mb-4">Ready to Work With Us?</h2>
           <p className="text-slate-300 max-w-md mx-auto mb-8">Our engineering team is ready to discuss your inert atmosphere requirements.</p>
           <Link href="/contact" className="btn-outline-white">Get in Touch</Link>
         </div>

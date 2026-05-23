@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-14">
           <div className="section-rule mx-auto" />
           <p className="text-[var(--color-accent)] text-xs font-bold tracking-widest uppercase mb-3">Why Inertec</p>
-          <h2 className="text-display-lg text-white">The Engineering Difference</h2>
+          <h2 style={{ color: "#ffffff" }} className="text-display-lg">The Engineering Difference</h2>
         </div>
 
         <motion.div

@@ -38,7 +38,7 @@ export default function PageLayout({
               ))}
             </nav>
           )}
-          <h1 className="text-white text-4xl md:text-5xl font-bold font-display leading-tight max-w-2xl">{heroTitle}</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-4xl md:text-5xl font-bold font-display leading-tight max-w-2xl">{heroTitle}</h1>
         </div>
       </div>
 

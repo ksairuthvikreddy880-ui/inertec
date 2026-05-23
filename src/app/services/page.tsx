@@ -37,7 +37,7 @@ export default function ServicesPage() {
             <span>/</span>
             <span className="text-white">Services</span>
           </nav>
-          <h1 className="text-white text-5xl font-bold font-display mb-4">Engineering Support</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-5xl font-bold font-display mb-4">Engineering Support</h1>
           <p className="text-slate-300 text-lg max-w-xl">From installation to lifetime support — we&apos;re with you at every stage.</p>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="section-rule" />
-              <h2 className="text-display-lg text-white mb-4">Need Support?</h2>
+              <h2 style={{ color: "#ffffff" }} className="text-display-lg mb-4">Need Support?</h2>
               <p className="text-slate-300 leading-relaxed mb-8">
                 Whether you need technical assistance, spare parts, or want to schedule a maintenance visit — our team is ready to help.
               </p>

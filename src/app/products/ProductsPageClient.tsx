@@ -33,7 +33,7 @@ export default function ProductsPageClient() {
             <span>/</span>
             <span className="text-white">Products</span>
           </nav>
-          <h1 className="text-white text-5xl font-bold font-display mb-4">Engineered Systems</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-5xl font-bold font-display mb-4">Engineered Systems</h1>
           <p className="text-slate-300 text-lg max-w-xl">Advanced process solutions for modern manufacturing and research.</p>
         </div>
       </div>

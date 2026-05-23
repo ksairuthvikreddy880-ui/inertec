@@ -32,7 +32,7 @@ export default function ContactPageClient() {
             <span>/</span>
             <span className="text-white">Contact</span>
           </nav>
-          <h1 className="text-white text-5xl font-bold font-display mb-4">Contact Us</h1>
+          <h1 style={{ color: "#ffffff" }} className="text-white text-5xl font-bold font-display mb-4">Contact Us</h1>
           <p className="text-slate-300 text-lg max-w-xl">Our engineering team responds within one business day.</p>
         </div>
       </div>
